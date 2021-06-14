@@ -8,34 +8,55 @@
     }
     &__link {
         display: flex;
+        font-size: 20px;
+        line-height: 1.1;
         align-items: center;
+        outline: transparent;
+        color: inherit;
+        background: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%),
+        linear-gradient(0deg, #DCD7C0, #DCD7C0);
+        ;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: color 0.3s ease-in;
+        &:focus {
+            outline: 1px solid $title;
+        }
+        &:hover {
+            background: #fff;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        &:active {
+            background: $gray;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        &:hover .header__phone{
+            fill: #fff;
+        }
+        &:active .header__phone{
+            fill: $gray;
+        }
     }
     &__phone {
         width: 14px;
         height: 14px;
         fill: $gray;
         margin-right: 12px;
+        transition: fill 0.3s ease-in;
     }
 }
 
 .logo {
     display: flex;
     align-items: center;
+    outline: transparent;
     &__images {
         margin-right: 10px;
     }
-    &__text {
-        text-transform: uppercase;
-        width: 170px;
-        font-size: 20px;
-        line-height: 1.2;
-        // color: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%);
-        @include lineClamp;
-        -webkit-line-clamp: 2;
-        p {
-            text-transform: capitalize;
-            font-size: 14px;
-        }
+    &:focus {
+        outline: 1px solid $gray;
     }
 }
 
@@ -48,14 +69,43 @@
     }
     &__item {
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 40px;
         }
     }
     &__link {
         display: inline-block;
         padding: 10px 5px;
-        border-bottom: 1px solid transparent;
         line-height: 1.1;
         color: $title;
+        outline: transparent;
+        transition: color 0.3s ease-in;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 0%;
+            background-color: transparent;
+            transition: width 0.3s ease-in;
+        }
+        &:hover {
+            color: #fff;
+        }
+        &:hover::after {
+            width: 100%;
+            background-color: #fff;
+        }
+        &:focus {
+            color: #fff;
+        }
+        &:active {
+            color: $gray;
+            border-color: $gray;
+        }
+        &:active::after {
+            background-color: $gray;
+        }
     }
 }
