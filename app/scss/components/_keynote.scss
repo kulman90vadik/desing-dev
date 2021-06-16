@@ -1,0 +1,65 @@
+.keynote {
+    position: relative;
+    margin-bottom: 173px;
+    background-color: $gray;
+    min-height: 1000px;
+    &__bg {
+        left: 0;
+        top: -60px;
+        width: 1000px;
+        height: 993px;
+        @include bg;
+        position: absolute;
+        z-index: 6;
+    }
+    &__inner {
+        max-width: 506px;
+        width: 100%;
+        margin-left: auto;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__subtitle {
+        font-size: 40px;
+        line-height: 1.5;
+        font-family: $Garamond;
+        color: $black;
+        @include lineClamp;
+        -webkit-line-clamp: 3;
+        mark {
+            text-transform: uppercase;
+            font-weight: $fw700;
+            background-color: transparent;
+        }
+    }
+    &__text {
+        color: $black-04;
+        p {
+            line-height: 1.5;
+            @include lineClamp;
+            -webkit-line-clamp: 3;
+            mark {
+                line-height: 1.2;
+                font-size: 24px;
+                background-color: transparent;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: $gray;
+        bottom: -170px;
+        transform-origin: left bottom;
+        transform: skewY(-5deg);
+        height: 170px;
+        width: 100%;
+        left: 0;
+        z-index: 3;
+    }
+}

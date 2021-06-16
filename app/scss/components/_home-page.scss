@@ -1,8 +1,16 @@
 .home-page {
     display: flex;
     height: calc(100vh - 68px);
+    @include bg;
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
     &__social {
+        position: absolute;
         background-color: $black;
+        left: 0;
+        top: 0;
+        bottom: 0;
         padding: 0 35px 0 31px;
         display: flex;
         flex-direction: column;
@@ -17,10 +25,6 @@
         font-size: 14px;
         color: $gray;
         margin-bottom: 25px;
-    }
-    &__content {
-        @include bg;
-        width: 100%;
     }
     &__inner {
         max-width: 750px;
@@ -60,14 +64,27 @@
         background-color: #fff;
         font-size: 14px;
         outline: transparent;
-        border: 1px solid transparent;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.2s ease-in;
         &:hover {
-            background-color: $black;
-            color: #fff;
+            background-color: rgba(#fff, 0.5);
         }
-        &:hover {
-            background-color: $black;
-            color: #fff;
+        &:focus {
+            background-color: rgba(#fff, 0.7);
         }
+        &:active {
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__decor-text {
+        position: absolute;
+        background: linear-gradient(126.33deg, rgba(85,80,80,0.4) -43.79%, rgba(222,211,109,0.1) 52.43%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: $fw900;
+        font-size: 90px;
+        width: 410px;
+        bottom: -60px;
+        right: 20px;    
+        text-transform: uppercase;
     }
 }

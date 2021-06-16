@@ -1,0 +1,50 @@
+.work {
+
+    &__title {
+
+    }
+}
+
+.work-slider {
+    max-width: 100%;
+    margin-bottom: 55px;
+    @include bg;
+    &__item {
+        height: 606px;
+    }
+    &__description {
+        background-color: rgba(#000, 0.5);
+        font-size: 48px;
+        font-family: $Garamond;
+        color: $title;
+        text-align: center;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+    }
+    &__year {
+        font-weight: $fw700;
+    }
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        bottom: -35px;
+        li {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &.slick-active button{
+                background-color: #fff;
+            }
+        }
+        li button {
+            padding: 0;
+            border: none;
+            font-size: 0;
+            width: 50px;
+            height: 5px;
+            background-color: $black-03;
+            cursor: pointer;
+        }
+    }
+}
+// доделать!!!!

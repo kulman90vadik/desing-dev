@@ -43,7 +43,7 @@
                     <use xlink:href="images/sprite.svg#tel"></use>
                 </svg>
                 <span class="visually-hidden">
-                    phone icon, by clicking on which you can contact us
+                    значок телефона, нажав на который вы можете связаться с нами
                 </span>
                 8 (700) 300-03-40
             </a>
@@ -51,64 +51,387 @@
     </div>
 </header>
     <main class="main">
-        <section class="home-page">
+        <section class="home-page" style="background-image: url(images/home-page-bg.jpg);">
     <div class="home-page__social">
-        <p class="home-page__text">
-            Студия дизайна интерьера
-        </p>
-        <ul class="social social--line">
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <svg class="social__icon">
-                        <use xlink:href="images/sprite.svg#insta"></use>
+            <p class="home-page__text">
+                Студия дизайна интерьера
+            </p>
+            <ul class="social social--line">
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <svg class="social__icon">
+                            <use xlink:href="images/sprite.svg#insta"></use>
+                        </svg>
+                        <span class="visually-hidden">
+                            значок Instagram, при клике на него, вы будете перенаправлены в нашу учетную запись Instagram
+                        </span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <svg class="social__icon">
+                            <use xlink:href="images/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">
+                            значок vkontakte, при клике на него, вы будете перенаправлены в нашу учетную запись vkontakte
+                        </span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <svg class="social__icon">
+                            <use xlink:href="images/sprite.svg#facebook"></use>
+                        </svg>
+                        <span class="visually-hidden">
+                            значок facebook, при клике на него, вы будете перенаправлены в нашу учетную запись facebook
+                        </span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <svg class="social__icon">
+                            <use xlink:href="images/sprite.svg#pinterest"></use>
+                        </svg>
+                        <span class="visually-hidden">
+                            значок pinterest, при клике на него, вы будете перенаправлены в нашу учетную запись pinterest
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+    <div class="home-page__inner">
+        <h1 class="home-page__title">Роскошный дизайн интерьера в Нур-Султане</h1>
+        <span class="home-page__subtitle">
+            Мы создаем уникальные проекты любой сложности на высоком уровне качества!
+        </span>
+        <a class="home-page__link" href="#">Расчет стоимости</a>
+    </div>
+    <span class="home-page__decor-text">Interior design</span>
+</section>
+        <section class="projects">
+    <div class="container">
+        <h2 class="title projects__title">Наши проекты</h2>
+        <ul class="projects__buttons">
+            <li class="projects__item">
+                <button class="projects__btn" type="button" data-filter="all">Все</button>
+            </li>
+            <li class="projects__item">
+                <button class="projects__btn" type="button" data-filter=".living-rooms">Гостиные</button>
+            </li>
+            <li class="projects__item">
+                <button class="projects__btn" type="button" data-filter=".bedrooms">Спальни</button>
+            </li>
+            <li class="projects__item">
+                <button class="projects__btn" type="button" data-filter=".bathrooms">Ванные комнаты</button>
+            </li>
+        </ul>
+
+        <ul class="projects__inner">
+            <li class="projects__items mix all living-rooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-1.jpg" alt="Гостиная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+            <li class="projects__items  mix all living-rooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-2.jpg" alt="Гостиная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+            <li class="projects__items mix all bedrooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-3.jpg" alt="Спальная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+            <li class="projects__items mix all bedrooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-4.jpg" alt="Спальная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+            <li class="projects__items mix all bathrooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-5.jpg" alt="Ванная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+            <li class="projects__items mix all bathrooms">
+                <a class="projects__link" href="#">
+                    <div class="projects__photo">
+                        <img class="projects__images" src="images/projects-6.jpg" alt="Ванная комната">
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__subtitle">Дом для двух поколений</h3>
+                        <p class="projects__description">Уютная студия в ЖК Адмирал</p>
+                    </div> 
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="about">
+    <div class="container">
+        <h2 class="title about__title">
+            Лучшие решения, актуальный дизайн, непревзойденное качество — все это о нашей студии
+        </h2>
+        <div class="about__inner">
+            <ul class="about-slider">
+                <li class="about-slider__items">
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-1.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-2.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                    </div>
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-3.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-4.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                    </div>    
+                </li>
+                <li class="about-slider__items">
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-1.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-2.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                    </div>
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-3.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-4.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                    </div>    
+                </li>
+                <li class="about-slider__items">
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-1.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-2.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                    </div>
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-3.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-4.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                    </div>    
+                </li>
+                <li class="about-slider__items">
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-1.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-2.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                    </div>
+                    <div class="about-slider__item">
+                        <img class="about-slider__images" src="images/about-slider-3.jpg" width="259" height="407" alt="Картинка нашего интерьра">
+                        <img class="about-slider__images" src="images/about-slider-4.jpg" width="259" height="201" alt="Картинка нашего интерьра">
+                    </div>    
+                </li>
+            </ul>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        С 2011 года было нами было разработано уже множество успешных проектов. Мы проектируем подробные проекты дизайна интерьеров помещений любой сложности и не боимся сложных задач.
+                        Дизайн-проект может включать в себя перепланировку, рабочие чертежи, 3D-визуализацию, а также дополнителнительные услуги: авторский надзор, подбор материалов, смету и другое на Ваше личное усмотрение. 
+                        
+                    </p>
+                    <p>
+                        Мы работаем с помещениями любого типа и назначения: квартиры, коттедж, загородный дом, кафе или ресторан, офис, гостиница или бизнес-центр, бутик и многое другое.
+
+                    </p>
+                    <p>
+                        Мы не упустим ни один квадратный сантиметр, учтем все Ваши пожелания, добавим свои свежие идеи, познакомим с секретами интерьерных решений, скоординируем в ремонте и поможем создать в Вашем помещении утонченную роскошь!
+                    </p>
+                </div>
+                <ul class="about__statistics">
+                    <li class="about__box">
+                        <span class="about__vertical-text">более</span>
+                        <span class="about__number">10</span>
+                        <span class="about__description about__description--year ">лет на рынке</span>
+                    </li>
+                    <li class="about__box">
+                        <span class="about__vertical-text">более</span>
+                        <span class="about__number">200</span>
+                        <span class="about__description about__description--project ">успешных проектов</span>
+                    </li>
+                    <li class="about__box">
+                        <span class="about__vertical-text">более</span>
+                        <span class="about__number">300</span>
+                        <span class="about__description about__description--feedback">положительных отзывов</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="keynote">
+    <h2 class="visually-hidden">Наша главная цель</h2>
+    <div class="container">
+        <div class="keynote__inner">
+            <h3 class="keynote__subtitle">
+                Мы всегда <mark>стремимся</mark> к <mark>совершенству</mark> во всех деталях!
+            </h3>
+            <div class="keynote__text">
+                <p>
+                    Мы <mark>находимся</mark> в Астане (Нур-Султане), но работаем во всех городах <mark>Казахстана</mark> как удаленно, так и с выездом на замер и авторский надзор.
+
+                </p>
+                <p>
+                    Нами уже были <mark>реализованы проекты</mark> в г. Актау, Алматы, Павлодар, Шымкент, Жезказган, Караганды, Актобе, Тараз, Атырау и Петропавловск.
+                </p>
+                <p>
+                    Среди которых <mark>не только жилые дома</mark> и квартиры, но коммерческие помещения: рестораны, кафе, лаунж-бары, сауна и SPA, гостиницы и другое.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="keynote__bg" style="background-image: url(images/keynote-bg.png);">
+        <span class="visually-hidden">
+            Большое фоновое изображение в виде развёрнутой книги
+        </span>
+    </div>
+</section>
+
+
+
+
+
+        <section class="gallery">
+    <div class="container">
+        <h2 class="title gallery__title">Галлерея проекта</h2>
+        <ul class="gallery__list">
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
                     </svg>
                     <span class="visually-hidden">
-                        the instagram instagram icon, when you click on it, you will be redirected to our instagram account
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
                     </span>
                 </a>
             </li>
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <svg class="social__icon">
-                        <use xlink:href="images/sprite.svg#vk"></use>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
                     </svg>
                     <span class="visually-hidden">
-                        the vkontakte icon, when you click on it, you will go to our account in vkontakte for free
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
                     </span>
                 </a>
             </li>
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <svg class="social__icon">
-                        <use xlink:href="images/sprite.svg#facebook"></use>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
                     </svg>
                     <span class="visually-hidden">
-                        the facebook icon, when you click on it, you will be redirected to our facebook account
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
                     </span>
                 </a>
             </li>
-            <li class="social__item">
-                <a class="social__link" href="#">
-                    <svg class="social__icon">
-                        <use xlink:href="images/sprite.svg#pinterest"></use>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
                     </svg>
                     <span class="visually-hidden">
-                        pinterest icon, when you click on it, you will be redirected to our pinterest account
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
+                    </span>
+                </a>
+            </li>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
+                    </span>
+                </a>
+            </li>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
                     </span>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="home-page__content" style="background-image: url(images/home-page-bg.jpg);">
-        <div class="home-page__inner">
-            <h1 class="home-page__title">Роскошный дизайн интерьера в Нур-Султане</h1>
-            <span class="home-page__subtitle">
-                Мы создаем уникальные проекты любой сложности на высоком уровне качества!
-            </span>
-            <a class="home-page__link" href="#">Расчет стоимости</a>
-        </div>
+</section>
+
+
+        <section class="work">
+    <div class="container">
+        <h2 class="title work__title">Ремонт квартир любой сложности</h2>
+        <ul class="work-slider">
+            <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
+                <p class="work-slider__description">
+                    Мы предоставляем гарантию <span class="work-slider__year">1 год</span> на свои услуги, - гарантийное, а также постгарантийное обслуживание.
+                </p>
+            </li>
+            <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
+                <p class="work-slider__description">
+                    Мы предоставляем гарантию <span class="work-slider__year">1 год</span> на свои услуги, - гарантийное, а также постгарантийное обслуживание.
+                </p>
+            </li>
+            <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
+                <p class="work-slider__description">
+                    Мы предоставляем гарантию <span class="work-slider__year">1 год</span> на свои услуги, - гарантийное, а также постгарантийное обслуживание.
+                </p>
+            </li>
+            <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
+                <p class="work-slider__description">
+                    Мы предоставляем гарантию <span class="work-slider__year">1 год</span> на свои услуги, - гарантийное, а также постгарантийное обслуживание.
+                </p>
+            </li>
+            <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
+                <p class="work-slider__description">
+                    Мы предоставляем гарантию <span class="work-slider__year">1 год</span> на свои услуги, - гарантийное, а также постгарантийное обслуживание.
+                </p>
+            </li>
+        </ul>
     </div>
 </section>
+<!-- visually-hidden -->
     </main>
     <script src="js/main.min.js"></script>
 </body>

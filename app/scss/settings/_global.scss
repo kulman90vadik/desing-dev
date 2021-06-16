@@ -23,7 +23,7 @@ body {
     font-weight: $fw400;
     font-size: 16px;
     line-height: 1.2;
-    background-color: #fff;
+    background-color: $black;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -46,3 +46,13 @@ body {
     // }
 }
 
+.title {
+    font-family: $Garamond;
+    text-align: center;
+    font-weight: $fw700;
+    font-size: 40px;
+    color: $gray;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray;    
+}
