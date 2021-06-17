@@ -1,0 +1,58 @@
+.advice {
+    margin-bottom: 55px;
+    &__list {
+        margin-bottom: 25px;
+    }
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        cursor: pointer;
+        padding: 5px 0;
+        
+        &--active {
+            & .advice__name {
+                color: $black-03;
+            }
+            & .advice__icon {
+                transform: rotate(180deg);
+                fill: $black-03;
+            }
+        }
+        &:hover .advice__name{
+            color: $black-04;
+        }
+        &:hover .advice__icon{
+            fill: $black-04;
+        }
+    }
+
+    &__name {
+        color: $title;
+        font-weight: $fw700;
+        font-family: $Garamond;
+        font-size: 24px;
+        transition: color 0.3s ease-in;
+    }
+    &__icon {
+        width: 19px;
+        height: 10px;
+        fill: #fff;
+        transition: fill 0.3s ease-in, transform 0.3s ease-in;
+    }
+    &__text {
+        line-height: 1.6;
+        display: none;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 4;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &--active {
+            display: block;
+        }
+    }
+}

@@ -1,8 +1,5 @@
 .work {
-
-    &__title {
-
-    }
+    margin-bottom: 35px;
 }
 
 .work-slider {
@@ -44,7 +41,217 @@
             height: 5px;
             background-color: $black-03;
             cursor: pointer;
+            outline: transparent;
+            transition: background-color 0.3s ease-in;
+            &:hover {
+                background-color: $title;
+            }
+            &:focus {
+                background-color: $black-04;
+            }
+            &:active {
+                background-color: #fff;
+            }
         }
     }
 }
-// доделать!!!!
+
+.work-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    &__column {
+        max-width: 270px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #fff;
+        color: $black;
+        padding: 13px 0;
+
+
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        padding: 5px 0;
+        background-color: $title;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $fw700;
+        margin-bottom: 13px;
+    }
+    &__subtitle {
+        display: block;
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: $fw400;
+    }
+    &__content {
+        padding: 0 14px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__description {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 15px;
+        @include lineClamp;
+        -webkit-line-clamp: 3;
+        &--light {
+            width: 163px;
+            margin: 0 auto 15px;
+        }
+    }
+    &__length {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    &__num {
+        font-weight: $fw700;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &__heading {
+        font-weight: $fw700;
+        font-size: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+        &--light {
+            width: 140px;
+            margin: 0 auto 10px;
+        }
+    }
+    &__list {
+        color: #000;
+        font-size: 10px;
+        line-height: 2;
+        margin-bottom: 65px;
+    }
+    &__item {
+        @include lineClamp;
+        -webkit-line-clamp: 3;
+    }
+    &__link {
+        display: inline-block;
+        font-family: $Garamond;
+        padding: 15px 65px;
+        font-size: 14px;
+        color: #fff;
+        background-color: $black;
+        border-radius: 5px;
+        outline: transparent;
+        text-align: center;
+        margin-top: auto;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+        &:hover {
+            background-color: $gray;
+            color: $black;
+        }
+        &:focus {
+            background-color: rgba($black, 0.5);
+            color: #fff;
+        }
+        &:active {
+            background-color: rgba($black, 0.8);
+            color: #fff;
+        }
+    }
+}
+
+.work-time {
+    margin-bottom: 50px;
+    &__title {
+        padding-bottom: 0;
+        border-bottom: none;
+        font-size: 35px;
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 12px;
+    }
+    &__item {
+        max-width: 50%;
+        width: 100%;
+    }
+    &__btn {
+        width: 100%;
+        color: $gray;
+        padding: 20px 0;
+        background-color: transparent;
+        border: 1px solid $title;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+        outline: transparent;
+        transition: background-color 0.3s ease-in;
+        &:hover {
+            background-color: rgba($black, 0.5);
+        }
+        &:focus {
+            border-color: $gray;
+        }
+        &:active {
+            background-color: rgba($black, 0.9);
+        }
+        &.mixitup-control-active {
+            color: $black;
+            background-color: $gray200;
+            border-radius: 5px 0px 0px 5px;
+            // &:hover {
+            //     color: $black;
+            //     background-color: $gray200;
+            //     border-radius: 5px 0px 0px 5px;
+            // }
+        }
+
+    }
+    &__columns {
+        display: flex;
+        border-radius: 5px;
+    }
+    &__column {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        font-family: $Garamond;
+        font-weight: $fw700;
+        max-width: 25%;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 20px;
+        &:nth-child(even) {
+            background-color: rgba(230, 230, 230, 0.6);
+        }
+        &:nth-child(odd) {
+            background-color: rgba(230, 230, 230, 0.8);
+        }
+    }
+    &__name {
+        display: block;
+        margin-bottom: 65px;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+    }
+    &__block {
+        margin-top: auto;
+    }
+    &__items {
+        padding: 15px 0;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+        &:not(:last-child) {
+            border-bottom: 1px solid $gray100;
+        }
+    }
+}

@@ -109,7 +109,7 @@
     <span class="home-page__decor-text">Interior design</span>
 </section>
         <section class="projects">
-    <div class="container">
+    <div class="container" data-ref="container-1">
         <h2 class="title projects__title">Наши проекты</h2>
         <ul class="projects__buttons">
             <li class="projects__item">
@@ -394,6 +394,45 @@
                     </span>
                 </a>
             </li>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
+                    </span>
+                </a>
+            </li>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
+                    </span>
+                </a>
+            </li>
+            <li class="gallery__item">
+                <a class="gallery__link" href="#" >
+                    <img class="gallery__images" src="images/gallery-1.jpg" alt="Интерьер комнаты">
+                </a>
+                <a class="gallery__icon" href="images/gallery-1.jpg" data-fancybox="images" data-width="1200" data-height="900">
+                    <svg class="gallery__search">
+                        <use xlink:href="images/sprite.svg#search-plus"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                        иконка поиска, при клике на иконку откроется галлерея фотографий проекта
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 </section>
@@ -402,6 +441,9 @@
         <section class="work">
     <div class="container">
         <h2 class="title work__title">Ремонт квартир любой сложности</h2>
+        <span class="visually-hidden">
+            Ниже идёт слайдер из пяти слайдов, на каторых есть описание нашей работы
+        </span>
         <ul class="work-slider">
             <li class="work-slider__item" style="background-image: url(images/work-slider-1.jpg);">
                 <p class="work-slider__description">
@@ -429,9 +471,428 @@
                 </p>
             </li>
         </ul>
+
+        <h2 class="title work__title">Линейка тарифов</h2>
+        <ul class="work-price">
+            <li class="work-price__column">
+                <h3 class="work-price__title">
+                    <span class="work-price__subtitle">Пакет</span>
+                    "Light"
+                </h3>
+                <div class="work-price__content">
+                    <p class="work-price__description work-price__description--light">
+                        Для квартир с предчистовой и улучшенной черновой отделкой
+                    </p>
+                    <div class="work-price__length">
+                        <span class="work-price__num">18 000</span>
+                        <span class="work-price__text">тг/кв.м.</span>
+                    </div>
+                    <span class="work-price__heading work-price__heading--light">Ремонт "под ключ" 
+                        подразумевает:</span>
+                    <ul class="work-price__list">
+                        <li class="work-price__item">
+                            - Вырванивание поверхностей потолков и стен;
+                        </li>
+                        <li class="work-price__item">
+                            - Заливка пола "Экопол";
+                        </li>
+                        <li class="work-price__item">
+                            - Покраска стен и потолка;
+                        </li>
+                        <li class="work-price__item">
+                            - Укладка кафеля/керамогранита;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж лепнины потолочной;
+                        </li>
+                        <li class="work-price__item">
+                            - Укладка ламината;
+                        </li>
+                        <li class="work-price__item">
+                            - Поклейка обоев;
+                        </li>
+                        <li class="work-price__item">
+                            - Установка и монтаж сантехнического оборудования;
+                        </li>
+                        <li class="work-price__item">
+                            - Установка дверей;
+                        </li>
+                        <li class="work-price__item">
+                            - Установка и монтаж розеток и выключателей;
+                        </li>
+                        <li class="work-price__item">
+                            - Установка и монтаж приборов освещения;
+                        </li>
+                        <li class="work-price__item">
+                            - Уборка помещения
+                        </li>
+                        <li class="work-price__item">
+                            - Закуп/прием материалов;
+                        </li>
+                        <li class="work-price__item">
+                            - Расчет расходуемых материалов;
+                        </li>
+                        <li class="work-price__item">
+                            - Вывоз мусора;
+                        </li>
+                    </ul>   
+                    <a class="work-price__link" href="#">Заказать тариф</a>
+                </div>
+            </li>
+
+            <li class="work-price__column">
+                <h3 class="work-price__title">
+                    <span class="work-price__subtitle">Пакет</span>
+                    "Standart"
+                </h3>
+                <div class="work-price__content">
+                    <p class="work-price__description">
+                        Для квартир с предчистовой и улучшенной черновой отделкой по проекту Дизайна
+                    </p>
+                    <div class="work-price__length">
+                        <span class="work-price__num">22 000</span>
+                        <span class="work-price__text">тг/кв.м.</span>
+                    </div>
+                    <span class="work-price__heading">
+                        Ремонт "под ключ" все, что входит в пакет услуг "LIGHT", дополнительно:
+                    </span>
+                    <ul class="work-price__list">
+                        <li class="work-price__item">
+                            - Монтаж/демонтаж электрической проводки;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж/демонтаж дверных проемов;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж гипсокартоновых конструкций;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж молдингов и других элементов настенного лепного декора;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж и установка конструктивных элементов интерьера (МДФ-панели, гипсовые панели и другое);
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж и установка всех видов освещения (трековые светильники, софиты, светодиодная подсветка и другое);
+                        </li>
+                        <li class="work-price__item">
+                            - Поклейка фотообоев;
+                        </li>
+                        <li class="work-price__item">
+                            -Установка и монтаж мелких деталей (ключки, зеркала, ограничители  открывания дверей и т.д.)
+                        </li>
+                    </ul>   
+                    <a class="work-price__link" href="#">Заказать тариф</a>
+                </div>
+            </li>
+
+            <li class="work-price__column">
+                <h3 class="work-price__title">
+                    <span class="work-price__subtitle">Пакет</span>
+                    "Besinnes"
+                </h3>
+                <div class="work-price__content">
+                    <p class="work-price__description">
+                        Для квартир/домов и коммерческих помещений с черновой отделкой по проекту Дизайна интерьера
+                    </p>
+                    <div class="work-price__length">
+                        <span class="work-price__num">30 000</span>
+                        <span class="work-price__text">тг/кв.м.</span>
+                    </div>
+                    <span class="work-price__heading">
+                        Ремонт "под ключ" все, что входит в пакет услуг "STANDART", дополнительно:
+                    </span>
+                    <ul class="work-price__list">
+                        <li class="work-price__item">
+                            - Монтаж/демонтаж перегородок;
+                        </li>
+                        <li class="work-price__item">
+                            - Заливка пола бетонной стяжкой;
+                        </li>
+                        <li class="work-price__item">
+                            - Выравнивание поверхностей стен песчанной штукатуркой "под маяк";
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж всех видов настенного декора;
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж и установка металлических конструкций (лестницы, сцены, дополнительный этаж и другое);
+                        </li>
+                        <li class="work-price__item">
+                            - Клининг.
+                        </li>
+                        <li class="work-price__item">
+                            - Монтаж и установка элементов интерьера из натурального/искусственного камня, МДФ, гипса, пластика и дерева;
+                        </li>
+                    </ul>   
+                    <a class="work-price__link" href="#">Заказать тариф</a>
+                </div>
+            </li>
+
+            <li class="work-price__column">
+                <h3 class="work-price__title">
+                    <span class="work-price__subtitle">Пакет</span>
+                    "Vip"
+                </h3>
+                <div class="work-price__content">
+                    <p class="work-price__description">
+                        Для  всех видов помещений с черновой отделкой совместно с нашими услугами по ведению ремонта и дизайну интерьера
+                    </p>
+                    <div class="work-price__length">
+                        <span class="work-price__num">45 000</span>
+                        <span class="work-price__text">тг/кв.м.</span>
+                    </div>
+                    <span class="work-price__heading">
+                        Ремонт "под ключ" все, что входит в пакет услуг   "BUSINESS" дополнительно:
+                    </span>
+                    <ul class="work-price__list">
+                        <li class="work-price__item">
+                            - Разработка Эскизного Проекта дизайна интерьера с 3д-визуализацией;
+                        </li>
+                        <li class="work-price__item">
+                            - Разработка Рабочего Проекта, подразумевающего все чертежи и схемы;
+                        </li>
+                        <li class="work-price__item">
+                            - Авторский надзор дизайнера на объекте и при производстве мебели и других элементов интерьера;
+                        </li>
+                        <li class="work-price__item">
+                            - Подбор всех материалов, мебели, элементов декора;
+                        </li>
+                        <li class="work-price__item">
+                            - Надзор за исполнением сторонних исполнителей (производство мебели и другое);
+                        </li>
+                        <li class="work-price__item">
+                            - Технический инженерный надзор.
+                        </li>
+                    </ul>   
+                    <a class="work-price__link" href="#">Заказать тариф</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="work-time" data-ref="container-2">
+            <h3 class="title work-time__title">Сроки ремонта</h3>
+            <ul class="work-time__list">
+                <li class="work-time__item">
+                    <button class="work-time__btn" data-filter=".category-a">
+                        Ремонт без дизайна со стандартным ремонтом
+                    </button>
+                </li>
+                <li class="work-time__item">
+                    <button class="work-time__btn" data-filter=".category-b">
+                        Ремонт с дизайна с нестандартным ремонтом
+                    </button>
+                </li>
+            </ul>
+            <div class="work-time__inner">
+
+                <div class="work-time__columns mix category-a">
+                    <div class="work-time__column">
+                        <span class="work-time__name">1Плошадь, м2</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">50-80</li>
+                            <li class="work-time__items">80-120</li>
+                            <li class="work-time__items">120-200</li>
+                            <li class="work-time__items">200+</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Черновая отделка</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">2 мес</li>
+                            <li class="work-time__items">2.5 мес</li>
+                            <li class="work-time__items">3 мес</li>
+                            <li class="work-time__items">3.5-5 мес</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Предчистовая
+                            (удучшенная черновая)</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">1.5 мес</li>
+                            <li class="work-time__items">2 мес</li>
+                            <li class="work-time__items">2.5 мес</li>
+                            <li class="work-time__items">3-4 мес</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Вторичное жилье 
+                            с демонтжными работами</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">3 мес</li>
+                            <li class="work-time__items">3.5 мес</li>
+                            <li class="work-time__items">4 мес</li>
+                            <li class="work-time__items">5-6 мес</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-time__columns mix category-b">
+                    <div class="work-time__column">
+                        <span class="work-time__name">Плошадь, м2</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">50-80</li>
+                            <li class="work-time__items">80-120</li>
+                            <li class="work-time__items">120-200</li>
+                            <li class="work-time__items">200+</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Черновая отделка</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">2 мес</li>
+                            <li class="work-time__items">2.5 мес</li>
+                            <li class="work-time__items">3 мес</li>
+                            <li class="work-time__items">3.5-5 мес</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Предчистовая
+                            (удучшенная черновая)</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">1.5 мес</li>
+                            <li class="work-time__items">2 мес</li>
+                            <li class="work-time__items">2.5 мес</li>
+                            <li class="work-time__items">3-4 мес</li>
+                        </ul>
+                    </div>
+                    <div class="work-time__column">
+                        <span class="work-time__name">Вторичное жилье 
+                            с демонтжными работами</span>
+                        <ul class="work-time__block">
+                            <li class="work-time__items">3 мес</li>
+                            <li class="work-time__items">3.5 мес</li>
+                            <li class="work-time__items">4 мес</li>
+                            <li class="work-time__items">5-6 мес</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
-<!-- visually-hidden -->
+
+        <section class="advice">
+    <div class="container">
+        <h2 class="title">Полезные советы  от нас</h2>
+
+        <div class="advice__list">
+            <div class="advice__heading advice__heading--active">
+                <span class="advice__name">
+                    На что стоит обратить внимание при выборе дизайнеров?
+                </span>
+                <svg class="advice__icon">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">
+                    при клике на заголовок и иконку стрелка будет открываться описание
+                </span>
+            </div>
+            <div class="advice__text advice__text--active">
+                <p>
+                    Выбор стиля дизайна интерьера не должен зависеть от тренда или мнения окружающих. Если раньше, каких-то 5-10 лет назад все в основном применяли классику, то сегодня, зайдя в помещение, сделанное в этом стиле, может показаться, что ремонт в нем не производился уже давно, или у владельца нет вкуса. Однако, это может быть  не так. И в настоящее время классический интерьер вполне применим, если его "разбавить" современными акцентами, применить новые технологии.
+                </p>
+                <p>
+                    Мы работаем со всеми стилями: неоклассика, ар-деко, современный стиль дизайна, минимализм, лофт, модерн, классика, хай-тек, скандинавский стиль, этнический стиль и многое другое. Мы можем создать гармоничное пространство, применяя эклектику (смешение стилей), при этом результат никогда не будет вычурным или вульгарным. Все наши работы создаются по подробно составленному Техниескому Заданию, в котором оговорены все требуемые нашими клиентами условиями.
+                </p>
+            </div>
+        </div>
+
+        <div class="advice__list">
+            <div class="advice__heading">
+                <span class="advice__name">
+                    Как долго разрабатывается авторский дизайн интерьера?
+                </span>
+                <svg class="advice__icon">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">
+                    при клике на заголовок и иконку стрелка будет открываться описание
+                </span>
+            </div>
+            <div class="advice__text">
+                <p>
+                    Выбор стиля дизайна интерьера не должен зависеть от тренда или мнения окружающих. Если раньше, каких-то 5-10 лет назад все в основном применяли классику, то сегодня, зайдя в помещение, сделанное в этом стиле, может показаться, что ремонт в нем не производился уже давно, или у владельца нет вкуса. Однако, это может быть  не так. И в настоящее время классический интерьер вполне применим, если его "разбавить" современными акцентами, применить новые технологии.
+                </p>
+                <p>
+                    Мы работаем со всеми стилями: неоклассика, ар-деко, современный стиль дизайна, минимализм, лофт, модерн, классика, хай-тек, скандинавский стиль, этнический стиль и многое другое. Мы можем создать гармоничное пространство, применяя эклектику (смешение стилей), при этом результат никогда не будет вычурным или вульгарным. Все наши работы создаются по подробно составленному Техниескому Заданию, в котором оговорены все требуемые нашими клиентами условиями.
+                </p>
+            </div>
+        </div>
+
+        <div class="advice__list">
+            <div class="advice__heading">
+                <span class="advice__name">
+                    Какой выбрать стиль интерьера?
+                </span>
+                <svg class="advice__icon">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">
+                    при клике на заголовок и иконку стрелка будет открываться описание
+                </span>
+            </div>
+            <div class="advice__text">
+                <p>
+                    Выбор стиля дизайна интерьера не должен зависеть от тренда или мнения окружающих. Если раньше, каких-то 5-10 лет назад все в основном применяли классику, то сегодня, зайдя в помещение, сделанное в этом стиле, может показаться, что ремонт в нем не производился уже давно, или у владельца нет вкуса. Однако, это может быть  не так. И в настоящее время классический интерьер вполне применим, если его "разбавить" современными акцентами, применить новые технологии.
+                </p>
+                <p>
+                    Мы работаем со всеми стилями: неоклассика, ар-деко, современный стиль дизайна, минимализм, лофт, модерн, классика, хай-тек, скандинавский стиль, этнический стиль и многое другое. Мы можем создать гармоничное пространство, применяя эклектику (смешение стилей), при этом результат никогда не будет вычурным или вульгарным. Все наши работы создаются по подробно составленному Техниескому Заданию, в котором оговорены все требуемые нашими клиентами условиями.
+                </p>
+            </div>
+        </div>
+
+        <div class="advice__list">
+            <div class="advice__heading">
+                <span class="advice__name">
+                    Что отличает наши интерьеры?
+                </span>
+                <svg class="advice__icon">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">
+                    при клике на заголовок и иконку стрелка будет открываться описание
+                </span>
+            </div>
+            <div class="advice__text">
+                <p>
+                    Выбор стиля дизайна интерьера не должен зависеть от тренда или мнения окружающих. Если раньше, каких-то 5-10 лет назад все в основном применяли классику, то сегодня, зайдя в помещение, сделанное в этом стиле, может показаться, что ремонт в нем не производился уже давно, или у владельца нет вкуса. Однако, это может быть  не так. И в настоящее время классический интерьер вполне применим, если его "разбавить" современными акцентами, применить новые технологии.
+                </p>
+                <p>
+                    Мы работаем со всеми стилями: неоклассика, ар-деко, современный стиль дизайна, минимализм, лофт, модерн, классика, хай-тек, скандинавский стиль, этнический стиль и многое другое. Мы можем создать гармоничное пространство, применяя эклектику (смешение стилей), при этом результат никогда не будет вычурным или вульгарным. Все наши работы создаются по подробно составленному Техниескому Заданию, в котором оговорены все требуемые нашими клиентами условиями.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+        <div class="feedback">
+    <div class="container">
+        <div class="feedback__inner">
+            <div class="feedback__images" style="background-image: url(images/feedback-bg.jpg);">
+                <span class="visually-hidden">
+                    Фотография интерьера нашего проекта 
+                </span>
+            </div>
+            <div class="feedback__info">
+                <div class="feedback__text">
+                    <p>
+                        Всех наших клиентов объединяет то, что они думают о будущем, идут впереди тенденций и предпочитают работать с лучшим!
+                    </p>
+                </div>
+                <form class="feedback__form" action="#">
+                    <label class="visually-hidden" for="tel">
+                        текстовое поле, напишите свой номер телефона и мы с вами свяжимся
+                    </label>
+                    <input class="feedback__input" type="tel" name="телефон" id="tel" placeholder="+ 7 (___) ___ - __ - __">
+                    <button class="feedback__btn" type="submit">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     </main>
     <script src="js/main.min.js"></script>
 </body>

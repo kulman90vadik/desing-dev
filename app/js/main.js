@@ -13,17 +13,22 @@ $(function(){
         fade: true
     });
 
-
-
-
-    // var mixer = mixitup('.projects__inner');
-
-    var mixer = mixitup('.projects__inner', {
-        animation: {
-            effects: 'transateZ(-300px)',
-            perspectiveOrigin: '100% 0'
-        }
+    $('.advice__heading').on('click', function(){
+        $(this).next('.advice__text').slideToggle();
+        $(this).toggleClass('advice__heading--active');
     });
 
+
+
+    var containerEl1 = document.querySelector('[data-ref="container-1"]');
+    var containerEl2 = document.querySelector('[data-ref="container-2"]');
+    var config = {
+        controls: {
+            scope: 'local'
+        }
+    };
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
+    mixer2.filter('.category-a');
     
 });

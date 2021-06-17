@@ -1,0 +1,79 @@
+.feedback {
+    margin-bottom: 100px;
+    &__inner {
+        display: flex;
+    }
+    &__images {
+        min-height: 505px;
+        max-width: 50%;
+        width: 100%;
+        @include bg;
+    }
+    &__info {
+        max-width: 50%;
+        width: 100%;
+        background-color: $title;
+        padding: 50px;
+    }
+    &__text {
+        font-family: $Garamond;
+        font-weight: $fw700;
+        font-size: 27px;
+        line-height: 1.2;
+        color: $black;
+        margin-bottom: 40px;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 4;
+        }
+    }
+    &__form {
+        max-width: 300px;
+        width: 100%;
+
+    }
+    &__input {
+        border: none;
+        outline: transparent;
+        height: 65px;
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+        padding-left: 50px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: background-color 0.3s ease-in;
+        &::placeholder {
+            color: $gray300;
+            transition: color 0.3s ease-in;
+        }
+        &:focus {
+            background-color: $gray;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        width: 100%;
+        height: 65px;
+        background-color: $black;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        outline: transparent;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        &:hover {
+            background-color: rgba($black, 0.4);
+        }
+        &:focus {
+            background-color: #fff;
+            color: $black;
+        }
+        &:active {
+            background-color: rgba($black, 0.8);
+            color: #fff;
+        }
+    }
+}
