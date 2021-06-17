@@ -1,5 +1,9 @@
 .work {
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
+    padding-top: 70px;
+    &__title {
+        margin-bottom: 55px;
+    }
 }
 
 .work-slider {
@@ -67,10 +71,12 @@
         background-color: #fff;
         color: $black;
         padding: 13px 0;
-
-
         display: flex;
         flex-direction: column;
+        transition: transform 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     &__title {
         padding: 5px 0;
@@ -208,11 +214,6 @@
             color: $black;
             background-color: $gray200;
             border-radius: 5px 0px 0px 5px;
-            // &:hover {
-            //     color: $black;
-            //     background-color: $gray200;
-            //     border-radius: 5px 0px 0px 5px;
-            // }
         }
 
     }

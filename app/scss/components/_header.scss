@@ -1,9 +1,18 @@
 .header {
+    padding: 13px 0;
+    transition: padding 0.3s ease-in;
+    width: 100%;
+    z-index: 55;
+    background-color: $black;
+    position: fixed;
+    &--bg {
+        padding: 7px 0;
+        border-bottom: 1px solid $black-03;
+    }
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 13px 0;
     }
     &__link {
         display: flex;
@@ -19,7 +28,12 @@
         -webkit-text-fill-color: transparent;
         transition: color 0.3s ease-in;
         &:focus {
-            outline: 1px solid $title;
+            background: rgb(138, 137, 137);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            .header__phone{
+                fill: rgb(138, 137, 137);
+            }
         }
         &:hover {
             background: #fff;
@@ -53,9 +67,6 @@
     outline: transparent;
     &__images {
         margin-right: 10px;
-    }
-    &:focus {
-        outline: 1px solid $gray;
     }
 }
 
