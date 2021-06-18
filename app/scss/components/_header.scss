@@ -6,7 +6,7 @@
     background-color: $black;
     position: fixed;
     &--bg {
-        padding: 7px 0;
+        padding: 5px 0;
         border-bottom: 1px solid $black-03;
     }
     &__inner {
@@ -51,6 +51,10 @@
         &:active .header__phone{
             fill: $gray;
         }
+        @include max($lg) {
+            margin-left: auto;
+            margin-right: 15px;
+        }
     }
     &__phone {
         width: 14px;
@@ -58,6 +62,87 @@
         fill: $gray;
         margin-right: 12px;
         transition: fill 0.3s ease-in;
+        @include max($sm) {
+            width: 24px;
+            height: 24px;
+            margin-right: 0;
+        }
+    }
+    &__button {
+        width: 48px;
+        height: 48px;
+        background-color: $black-04;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: transparent;
+        transition: background-color 0.3s ease-in;
+        @include max($lg) {
+            display: flex;
+            order: 1;
+            position: relative;
+            z-index: 77;
+        }
+        @include max($sm) {
+            width: 40px;
+            height: 40px;
+            padding-right: 2px;
+        }
+        &:hover {
+            background-color: rgba($black-04, 0.7);
+        }
+        &:focus {
+            background-color: $black-03;
+        }
+        &:active {
+            background-color: rgba($black-04, 0.5);
+        }
+    }
+    &__items {
+        display: block;
+        width: 28px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: transform 0.3s ease-in;
+        &:nth-child(2) {
+            margin: 4px 0;
+        }
+        @include max($sm) {
+            width: 25px;
+            height: 3px;
+        }
+        &--active {
+            transition: transform 0.3s ease-in;
+            &:nth-child(1) {
+                transform-origin: 63%;
+                transform: rotate(-43deg);
+                @include max($sm) {
+                    transform-origin: 60%;
+                    transform: rotate(-45deg);
+                }
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: rotate(45deg);
+                transform-origin: 57%;
+            }
+        }
+    }
+    &__tel {
+        @include max($sm) {
+            display: none;
+        }
+    }
+    @include max($lg) {
+        padding: 5px 0;
     }
 }
 
@@ -73,13 +158,33 @@
 .menu {
     display: flex;
     align-items: center;
+    transition: transform 0.5s ease-in;
     &__list {
         display: flex;
-        
+        @include max($lg) {
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item {
         &:not(:last-child) {
             margin-right: 40px;
+            @include max($lg) {
+                margin-right: 0;
+            }
+        }
+        @include max($lg) {
+            text-align: center;
+            width: 100%;
+            margin: 15px 0;
+        }
+        @include max($md) {
+            margin: 7px 0;
         }
     }
     &__link {
@@ -99,6 +204,9 @@
             width: 0%;
             background-color: transparent;
             transition: width 0.4s ease-in;
+            @include max($lg) {
+                display: none;
+            }
         }
         &:hover {
             color: #fff;
@@ -117,5 +225,28 @@
         &:active::after {
             background-color: $gray;
         }
+        @include max($lg) {
+            width: 100%;
+            color: $black;
+            padding: 10px 0;
+            font-size: 18px;
+
+        }
+    }
+    @include max($lg) {
+        position: absolute;
+        z-index: 66;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100vh;
+        background-color: #a8a79f;
+        transform: translateX(-110%);
+    }
+    &--active {
+        transform: translateX(0);
     }
 }
+
+

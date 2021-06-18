@@ -51,6 +51,20 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+            @include max($lg) {
+                display: none;
+            }
+        }
+        & .social__item {
+            @include max($lg) {     
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+        }
+        @include max($lg) {
+            margin-bottom: 0;
+            padding-top: 0;
+            display: flex;
         }
     }
 }

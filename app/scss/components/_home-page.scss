@@ -15,6 +15,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        @include max($xl) {
+            padding: 0 16px;
+        }
+        @include max($lg) {
+            top: auto;
+            bottom: 20px;
+            left: 10px;
+            padding: 0;
+            background-color: transparent;
+        }
     }
     &__text {
         transform: rotate(-90deg);
@@ -24,6 +34,9 @@
         font-size: 14px;
         color: $gray;
         margin-bottom: 25px;
+        @include max($lg) {
+            display: none;
+        }
     }
     &__inner {
         max-width: 750px;
@@ -44,6 +57,16 @@
         text-transform: uppercase;
         @include lineClamp;
         -webkit-line-clamp: 2;
+        @include max($lg) {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        @include max($md) {
+            font-size: 23px;
+        }
+        @include max($s) {
+            -webkit-line-clamp: 3;
+        }
     }
     &__subtitle {
         max-width: 510px;
@@ -53,6 +76,13 @@
         margin-bottom: 25px;
         @include lineClamp;
         -webkit-line-clamp: 2;
+        @include max($lg) {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        @include max($s) {
+            -webkit-line-clamp: 3;
+        }
     }
     &__link {
         display: inline-block;
@@ -73,6 +103,9 @@
         &:active {
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
+        @include max($lg) {
+            padding: 19px 35px;
+        }
     }
     &__decor-text {
         position: absolute;
@@ -85,5 +118,18 @@
         bottom: -60px;
         right: 20px;    
         text-transform: uppercase;
+        @include max($lg) {
+            font-size: 30px;
+            bottom: 25px;
+            width: 35%;
+            right: 0;
+        }
+        @include max($md) {
+            width: 45%;
+            font-size: 27px;
+        }
+        @include max($s) {
+            display: none;
+        }
     }
 }
