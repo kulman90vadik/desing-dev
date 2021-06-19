@@ -1,10 +1,17 @@
 .gallery {
-    // margin-bottom: 70px;
     padding-top: 70px;
+    &__title {
+        @include max($md) {
+            margin-bottom: 10px;
+        }
+    }
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include max($xl) {
+            justify-content: center;
+        }
     }
     &__item {
         position: relative;
@@ -21,6 +28,15 @@
         }
         &:hover .gallery__images{
             transform: scale(1.1);
+        }
+        @include max($xl) {
+            margin: 10px;
+        }
+        @include max($sm) {
+            margin: 0 0 15px;
+        }
+        @include max($s) {
+            height: 195px;
         }
     }
     &__images {
@@ -45,5 +61,8 @@
         margin: auto;
         opacity: 0;
         transition: opacity 0.8s ease-in;
+    }
+    @include max($lg) {
+        padding-top: 53px;
     }
 }

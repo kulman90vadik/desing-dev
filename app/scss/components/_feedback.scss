@@ -2,18 +2,37 @@
     margin-bottom: 100px;
     &__inner {
         display: flex;
+        @include max($md) {
+            flex-direction: column;
+        }
     }
     &__images {
         min-height: 505px;
         max-width: 50%;
         width: 100%;
         @include bg;
+        @include max($lg) {
+            min-height: 330px;
+            max-width: 40%;
+        }
+        @include max($md) {
+            flex-direction: column;
+            max-width: 100%;
+            min-height: 245px;
+        }
     }
     &__info {
         max-width: 50%;
         width: 100%;
         background-color: $title;
-        padding: 50px;
+        padding: 50px 30px;
+        @include max($lg) {
+            padding: 10px 15px;
+            max-width: 60%;
+        }
+        @include max($md) {
+            max-width: 100%;
+        }
     }
     &__text {
         font-family: $Garamond;
@@ -25,6 +44,15 @@
         p {
             @include lineClamp;
             -webkit-line-clamp: 4;
+            @include max($lg) {
+                -webkit-line-clamp: 6;
+            }
+            @include max($s) {
+                -webkit-line-clamp: 7;
+            }
+        }
+        @include max($lg) {
+            margin-bottom: 10px;
         }
     }
     &__form {
@@ -75,5 +103,8 @@
             background-color: rgba($black, 0.8);
             color: #fff;
         }
+    }
+    @include max($lg) {
+        margin-bottom: 55px;
     }
 }

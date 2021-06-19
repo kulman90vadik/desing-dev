@@ -2,6 +2,9 @@
     margin-bottom: 55px;
     &__list {
         margin-bottom: 25px;
+        @include max($lg) {
+            margin-bottom: 5px;
+        }
     }
     &__heading {
         display: flex;
@@ -26,6 +29,9 @@
         &:hover .advice__icon{
             fill: $black-04;
         }
+        @include max($lg) {
+            margin-bottom: 5px;
+        }
     }
 
     &__name {
@@ -34,6 +40,19 @@
         font-family: $Garamond;
         font-size: 24px;
         transition: color 0.3s ease-in;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+        @include max($md) {
+            -webkit-line-clamp: 2;
+        }
+        @include max($sm) {
+            -webkit-line-clamp: 3;
+            line-height: 1.2;
+            max-width: 248px;
+        }
+        @include max($s) {
+            font-size: 21px;
+        }
     }
     &__icon {
         width: 19px;
@@ -49,6 +68,12 @@
             -webkit-line-clamp: 4;
             &:not(:last-child) {
                 margin-bottom: 20px;
+                @include max($md) {
+                    margin-bottom: 10px;
+                }
+            }
+            @include max($md) {
+                -webkit-line-clamp: 8;
             }
         }
         &--active {
@@ -56,3 +81,4 @@
         }
     }
 }
+

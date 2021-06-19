@@ -11,6 +11,14 @@
         @include bg;
         position: absolute;
         z-index: 6;
+        @include max($xl) {
+            width: 700px;
+            height: 593px;
+        }
+        @include max($lg) {
+            display: none;
+        }
+
     }
     &__inner {
         max-width: 506px;
@@ -20,6 +28,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        @include max($xl) {
+            min-height: auto;
+            padding-top: 280px;
+            padding-bottom: 80px;
+        }
+        @include max($lg) {
+            padding: 80px 0;
+        }
+        @include max($sm) {
+            padding: 60px 0;
+        }
+        
     }
     &__subtitle {
         font-size: 40px;
@@ -33,6 +53,12 @@
             font-weight: $fw700;
             background-color: transparent;
         }
+        @include max($lg) {
+            font-size: 27px;
+        }
+        @include max($md) {
+            font-size: 22px;
+        }
     }
     &__text {
         color: $black-04;
@@ -44,9 +70,18 @@
                 line-height: 1.2;
                 font-size: 24px;
                 background-color: transparent;
+                @include max($sm) {
+                    font-size: 19px;
+                }
             }
             &:not(:last-child) {
                 margin-bottom: 20px;
+                @include max($sm) {
+                    margin-bottom: 10px;
+                }
+            }
+            @include max($sm) {
+                -webkit-line-clamp: 5;
             }
         }
     }
@@ -61,5 +96,27 @@
         width: 100%;
         left: 0;
         z-index: 3;
+        @include max($lg) {
+            bottom: -100px;
+            height: 100px;
+        }
+        @include max($md) {
+            bottom: -65px;
+            height: 70px;
+        }
+        @include max($sm) {
+            bottom: -44px;
+            height: 45px;
+        }
+    }
+    @include max($xl) {
+        min-height: 660px;
+    }
+    @include max($lg) {
+        min-height: auto;
+        margin-bottom: 125px;
+    }
+    @include max($sm) {
+        margin-bottom: 60px;
     }
 }
