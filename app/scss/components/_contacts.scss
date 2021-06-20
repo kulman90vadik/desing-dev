@@ -4,6 +4,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include max($lg) {
+            flex-direction: column;
+        }
     }
     &__address {
         max-width: 50%;
@@ -11,12 +14,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include max($xl) {
+            margin-right: 15px;
+        }
+        @include max($lg) {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
     }
     &__items {
         max-width: 39%;
         width: 100%;
         &:first-child {
             margin-bottom: 40px;
+            @include max($lg) {
+                margin-bottom: 20px;
+            }
+        }
+        @include max($xl) {
+            max-width: 50%;
+        }
+        @include max($lg) {
+            margin-bottom: 20px;
+        }
+        @include max($s) {
+            max-width: 100%;
         }
     }
     &__heading {
@@ -25,6 +48,9 @@
         color: #fff;
         @include lineClamp;
         -webkit-line-clamp: 1;
+        @include max($s) {
+            margin-bottom: 8px;
+        }
     }
     &__link {
         color: $title;
@@ -44,6 +70,11 @@
             color: $title;
         }
     }
+    &__location {
+        @include max($sm) {
+            -webkit-line-clamp: 4;
+        }
+    }
     &__tel {
         display: block;
     }
@@ -59,5 +90,16 @@
         width: 100%;
         height: 300px;
         border-radius: 5px;
+        @include max($lg) {
+            max-width: 100%;
+            height: 280px;
+        }
+        @include max($sm) {
+            height: 240px;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 0;
+        padding-top: 60px;
     }
 }
