@@ -26,7 +26,7 @@
     }
     &__description {
         background-color: rgba(#000, 0.5);
-        font-size: 48px;
+        font-size: 30px;
         font-family: $Garamond;
         color: $title;
         text-align: center;
@@ -39,7 +39,7 @@
             -webkit-line-clamp: 3;
         }
         @include max($sm) {
-            font-size: 19px;
+            font-size: 18px;
             padding: 0 10px;
             line-height: 1.1;
             -webkit-line-clamp: 5;

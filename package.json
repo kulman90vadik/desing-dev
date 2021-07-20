@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://kulman90vadik.github.io/desing-dev",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "deploy": "gh-pages -d dist"
+    
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +15,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
